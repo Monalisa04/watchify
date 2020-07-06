@@ -51,21 +51,18 @@ class MovieCard extends React.Component<MovieCardProps, MovieCardState> {
             <FA name="remove" style={{ color: "#FFF" }} />
           </button>
         </div>
-        <img
-          className="card-img-top"
-          src={movie.posterUrl}
-          alt="poster"
-        ></img>
+        <img className="card-img-top" src={movie.posterUrl} alt="poster"></img>
         <div className="card-body">
-          <h6 className="card-title">{movie.title}</h6>
-          <div className="card-text" title={movie.description}>
+          <h6 className="card-title font-weight-bold">{movie.title}</h6>
+          <div title={movie.description}>
             {truncate(movie.description, { length: 100 })}
           </div>
-          <div className="card-text watch-date">
+          <div className="watch-date">
             <b className="mr-2">WATCH ON</b>
             {movie.watchDate && (
               <DatePicker
-                wrapperClassName="movie-datepicker"
+                wrapperClassName="card-datepicker"
+                inputClassName="card-datepicker-input"
                 value={watchDate}
                 onChange={this.handleDateChange}
               />

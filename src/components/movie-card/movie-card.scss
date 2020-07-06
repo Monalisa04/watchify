@@ -18,7 +18,7 @@
     background-size: cover;
     border-top-right-radius: 4px;
   }
-  .card-text {
+  .card-body {
     color: #747373;
     font-size: 0.9rem;
   }
@@ -27,7 +27,10 @@
     bottom: 10px;
     color: #212529;
   }
-  .movie-datepicker {
+  .card-datepicker {
     z-index: 1000;
+  }
+  .card-datepicker-input {
+    width: 7rem;
   }
 }
