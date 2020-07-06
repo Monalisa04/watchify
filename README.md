@@ -9,21 +9,17 @@ Watchify is a web app which allows users to view and update a list of movies whi
 https://master.d3anfj6ecosysq.amplifyapp.com/
 
 # Installation
--Download and extract the repository contents onto local drive
--Navigate to the directory on which code is downloaded 
--Run npm install
--Run npm start
+- Download and extract the repository contents onto local drive
+- Navigate to the directory on which code is downloaded 
+- Run npm install
+- Run npm start
 
 # Future Enhancement
-The app has lot of scope for future enhancement
--Movie recommendations presented to user
--Search feature to search movie by name, genre etc
--User can add movie to watchlist from search results/recommendations etc
--Notification to user on planned date
--UI improvements
-        - handle loading state
-        - movie description 
-        etc
+- Movie recommendations presented to user
+- Search feature to search movie by name, genre etc
+- User can add movie to watchlist from search results/recommendations etc
+- Notification to user on planned date
+- UI improvements
 
 # Note
 Currently list of movies is fetched from an open API to mimic a user's saved watchlist. In reality, this will fetched using an API that returns movie watchlist saved against a user.
