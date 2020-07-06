@@ -8,4 +8,22 @@
   border-radius: 0;
   padding: 0px 30px;
   height: $navbarHeight;
+
+  .navbar-brand {
+    height: $navbarHeight;
+    display: flex;
+    align-items: center;
+    &.logo img {
+      margin-left: 5px;
+      width: 105px;
+      height: 45px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .app-header-fixed .navbar-brand.logo img {
+    width: 150px;
+    height: 65px;
+  }
 }

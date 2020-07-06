@@ -13,9 +13,8 @@ const MovieCardDecks = (props: MovieCardDecksProps) => {
   return movies.length > 0 ? (
     <div className="row bg-white box-shadow">
       {movies.map((movie: Movie) => (
-        <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3" key={movie.id}>
           <MovieCard
-            key={movie.id}
             movie={movie}
             onRemoveMovie={props.onRemoveMovie}
             onUpdateMovie={props.onUpdateMovie}
