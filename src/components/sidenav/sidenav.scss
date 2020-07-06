@@ -1,0 +1,25 @@
+.sidenav-container {
+  max-width: $sidenavWidth;
+}
+.sidenav {
+  top: $navbarHeight !important;
+  z-index: 1015 !important;
+}
+.sidenav-content {
+  top: $navbarHeight !important;
+  .fa {
+    position: fixed;
+    top: calc(#{$navbarHeight}/ 2 - 15px);
+    z-index: 1030;
+    padding-left: 15px;
+    cursor: pointer;
+  }
+}
+.sidenav-overlay {
+  top: $navbarHeight !important;
+}
+@media (min-width: 768px) {
+  .sidenav-content .fa {
+    display: none;
+  }
+}

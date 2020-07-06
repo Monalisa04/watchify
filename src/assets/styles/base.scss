@@ -1,0 +1,116 @@
+/* 
+
+*/
+$navbarHeight: 80px;
+$sidenavWidth: 200px;
+html,
+body {
+  min-height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+html {
+  background-color: #f0f3f4;
+}
+
+body {
+  font-family: "Roboto Condensed", "Source Sans Pro", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.42857143;
+  color: #212529;
+  background-color: #d9e0e7;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+*:focus {
+  outline: 0 !important;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover,
+a:focus {
+  color: #141719;
+  text-decoration: none;
+}
+
+label {
+  font-weight: normal;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  &.btn-xs {
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  &.btn-icon {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: none;
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+  }
+  &.btn.btn-circle,
+  &.btn.btn-rounded {
+    -webkit-border-radius: 200px;
+    border-radius: 200px;
+  }
+}
+
+.bg-dark {
+  background-color: rgb(64, 66, 87);
+}
+.bg-white {
+  background-color: #fff;
+}
+
+.text-white {
+  * {
+    color: white;
+  }
+}
+.box-shadow {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+.rounded {
+  border-radius: 4px;
+}
+.app-main {
+  padding-top: $navbarHeight + 15px;
+  position: relative;
+}
+.app-content {
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .app-content {
+    margin-left: $sidenavWidth;
+  }
+}
