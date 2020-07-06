@@ -9,6 +9,9 @@ interface SideNavState {
 
 const mediaQueryList = window.matchMedia(`(min-width: 768px)`);
 
+/**
+ * Sidebar using library react-sidebar
+ */
 class SideNav extends React.Component<{}, SideNavState> {
   constructor(props: any) {
     super(props);
@@ -18,6 +21,8 @@ class SideNav extends React.Component<{}, SideNavState> {
     };
   }
 
+  /** These lifecycle methods have been implemented as per  react-sidebar
+   * documentation to bring responsiveness to sidebar. */
   componentWillMount() {
     mediaQueryList.addListener(this.mediaQueryChanged);
   }

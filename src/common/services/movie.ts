@@ -1,8 +1,10 @@
 import Axios from "axios";
 import { API_KEY, MOVIE_WATCH_LIST_API_URL } from "../constants";
 
-/**  API to get watch list for user. Currently it is simulated
- * by fetching "Now Playing" movies */
+/**
+ * API to get watch list for user. Currently it is simulated
+ * by fetching "Now Playing" movies
+ */
 export const getMovieWatchList = async () => {
   let response: {
     movies: any | null;

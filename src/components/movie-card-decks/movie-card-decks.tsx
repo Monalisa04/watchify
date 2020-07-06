@@ -7,6 +7,9 @@ interface MovieCardDecksProps {
   onRemoveMovie: Function;
   onUpdateMovie: Function;
 }
+/**
+ * Stateless component to display decks of movie cards
+ */
 const MovieCardDecks = (props: MovieCardDecksProps) => {
   const { movies } = { ...props };
 

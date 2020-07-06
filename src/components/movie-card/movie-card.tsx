@@ -9,6 +9,9 @@ interface MovieCardProps {
   onRemoveMovie: Function;
   onUpdateMovie: Function;
 }
+/**
+ * State to save datepicker input
+ */
 interface MovieCardState {
   selectedDate: Date;
 }
@@ -34,6 +37,10 @@ class MovieCard extends React.Component<MovieCardProps, MovieCardState> {
       }
     );
   };
+  /**
+   * Card deck to display movie title, movie description,
+   * planned date for watching movie and remove button
+   */
   render() {
     const { movie } = { ...this.props };
     const watchDate = {

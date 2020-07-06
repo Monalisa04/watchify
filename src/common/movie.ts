@@ -8,8 +8,3 @@ export interface Movie {
   posterUrl: string;
   watchDate?: Date;
 }
-/*
-export interface WatchListMovie extends Movie {
-  watchDate: Date;
-}
-*/

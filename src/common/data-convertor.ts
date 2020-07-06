@@ -2,6 +2,9 @@ import { Movie } from "./movie";
 import moment from "moment";
 import { POSTER_PATH_BASE_URL } from "./constants";
 
+/**
+ * Function that convert movies returned from API response to array of Movie objects
+ * */
 export const processWatchList = (response: Array<any>): Array<Movie> => {
   let movies: Array<Movie> = [];
 
