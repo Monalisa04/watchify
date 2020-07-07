@@ -3,7 +3,9 @@
 */
 $navbarHeight: 80px;
 $sidenavWidth: 200px;
-html,
+html {
+  height: 100%;
+}
 body {
   min-height: 100%;
   width: 100%;
