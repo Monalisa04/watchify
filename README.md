@@ -23,3 +23,5 @@ https://master.d3anfj6ecosysq.amplifyapp.com/
 
 # Note
 Currently list of movies is fetched from an open API to mimic a user's saved watchlist. In reality, this will fetched using an API that returns movie watchlist saved against a user.
+
+# Keywords
