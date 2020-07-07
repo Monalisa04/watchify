@@ -25,6 +25,7 @@ https://master.d3anfj6ecosysq.amplifyapp.com/
 - User can add movie to watchlist from search results/recommendations etc
 - Notification to user on planned date
 - UI improvements : Loading state - Movie description - Alignments etc
+- APIs to persist movie watchlist for user and to be retrieved later
 
 # Note
 
