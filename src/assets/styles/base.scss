@@ -3,6 +3,7 @@
 */
 $navbarHeight: 80px;
 $sidenavWidth: 200px;
+$footerHeight: 60px;
 html {
   height: 100%;
 }
@@ -106,6 +107,7 @@ label {
 }
 .app-main {
   padding-top: $navbarHeight + 15px;
+  padding-bottom: $footerHeight + 15px;
 }
 .app-content {
   padding: 10px;
